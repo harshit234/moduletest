@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="./script.css">
+
+</head>
+
+<body>
+    <div class="Frame1">
+        <h1>ROCK<br>PAPER<br> SCISSORS</h1>
+        <div class="Group45">
+            
+                <div id="score1">
+                    <p>YOUR <br> SCORE <br> <span id="humanScore">
+                            0 </span></p>
+                </div>
+                <div id="score2">
+                    <p>COMPUTER <br> SCORE <br> <span id="computerScore">
+                            0 </span></p>
+                </div>
+            
+        </div>
+    </div>
+    <div id="gameButtons">
+        
+    <button id="rockBtn" onclick="playRound('rock')">
+        <img src="./icons8-fist-67 1.png">
+    </button>
+    
+    
+        <button id="scissorsBtn" onclick="playRound('scissors')">
+        <img src="./17911 1.png"></button>
+    
+    
+    
+    </div>
+    <div id="paperdiv">
+        <button id="paperBtn" onclick="playRound('paper')">
+        <img src="./icons8-hand-64 1.png">
+  
+        </button>
+    </div>
+    <button class="reset"  >PLAY AGAIN</button>
+    <button class="btn6"  onclick="showRules()">Rules</button>
+    
+    
+    
+    <div id="rulesPopup" style="display: none;">
+        <h3>Game Rules</h3>
+        <br>
+        <ul>
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <br>
+            <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+            <br>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <br>
+            <li>If both players lay down the same hand, each player lays down another hand</li>
+            <br>
+        </ul>
+        
+        
+    
+    </div>
+    <div id="resultMessage">
+        
+    </div>
+    
+   
+    <script src="./script.js"></script>
+</body>
+
+</html>
